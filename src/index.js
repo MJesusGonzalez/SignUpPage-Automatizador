@@ -3,14 +3,14 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 //createUserWithEmailAndPassword
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC17J5Pna48y8qm_0IvRXtH8Hwmr5SFJHc",
-  authDomain: "pelisjesus-db427.firebaseapp.com",
-  projectId: "pelisjesus-db427",
-  storageBucket: "pelisjesus-db427.appspot.com",
-  messagingSenderId: "574701512207",
-  appId: "1:574701512207:web:9278b92827587fa51a257a",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
-const email = "marcelo@epn.edu.ec";
+const email = "user@epn.edu.ec";
 const password = "123456";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
