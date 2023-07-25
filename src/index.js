@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-//createUserWithEmailAndPassword
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -14,7 +13,6 @@ const email = "user@epn.edu.ec";
 const password = "123456";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log("inicializado");
 
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth();
@@ -22,8 +20,8 @@ createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
-    console.log("Usuario creado");
-    console.log(user.email);
+    alert(`User: ${user.email} created`);
+    console.log(user);
     // ...
   })
   .catch((error) => {
