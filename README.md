@@ -5,7 +5,6 @@
 1. Install all packages from
 
 ```
-
 npm init -y
 npm install
 ```
