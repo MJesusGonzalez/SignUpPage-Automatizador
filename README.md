@@ -29,7 +29,7 @@ npm run build
 
 ## Additional
 
-change email and password to add new user
+change email and password to add new user in `src/index.js`
 
 ## Disclaimer
 
