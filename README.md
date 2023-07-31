@@ -27,6 +27,10 @@ APP_ID= your_APP_ID
 npm run build
 ```
 
+## Additional
+
+change email and password to add new user
+
 ## Disclaimer
 
 Use at your own risk;
