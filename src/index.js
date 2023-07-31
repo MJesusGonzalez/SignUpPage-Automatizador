@@ -21,13 +21,9 @@ createUserWithEmailAndPassword(auth, email, password)
     // Signed in
     const user = userCredential.user;
     alert(`User: ${user.email} created`);
-    console.log(user);
-    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     alert(errorMessage);
-    console.log(errorCode, errorMessage);
-    // ..
   });
